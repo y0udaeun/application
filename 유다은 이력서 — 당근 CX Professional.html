@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///Users/daeunyumacbook/Downloads/resume_yudaeun_danggeun.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유다은 이력서 — 당근 CX Professional</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #FF7E1B;
+    --orange-light: #FFF3EA;
+    --black: #1A1A1A;
+    --gray-dark: #444;
+    --gray-mid: #888;
+    --gray-light: #F5F4F2;
+    --border: #E8E6E1;
+    --white: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Pretendard', sans-serif;
+    background: #F0EEE9;
+    color: var(--black);
+    font-size: 13px;
+    line-height: 1.6;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: var(--white);
+    margin: 32px auto;
+    padding: 14mm 16mm;
+    position: relative;
+  }
+
+  /* Header */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: start;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--black);
+    margin-bottom: 28px;
+  }
+
+  .name-block .name-ko {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+
+  .name-block .name-en {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 12px;
+    color: var(--gray-mid);
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .tagline {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-dark);
+    line-height: 1.5;
+  }
+
+  .tagline strong {
+    color: var(--orange);
+    font-weight: 700;
+  }
+
+  .contact-block {
+    text-align: right;
+    font-size: 12px;
+    color: var(--gray-mid);
+    line-height: 1.9;
+    font-family: 'Pretendard', sans-serif;
+  }
+
+  .contact-block a { color: var(--gray-mid); text-decoration: none; }
+
+  /* Section */
+  .section { margin-bottom: 24px; }
+
+  .section-title {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* Summary pills */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .summary-card {
+    background: var(--gray-light);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+
+  .summary-card .sc-label {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-mid);
+    margin-bottom: 4px;
+  }
+
+  .summary-card .sc-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 4px;
+  }
+
+  .summary-card .sc-desc {
+    font-size: 11px;
+    color: var(--gray-dark);
+    line-height: 1.5;
+  }
+
+  /* Experience */
+  .exp-item {
+    display: grid;
+    grid-template-columns: 148px 1fr;
+    gap: 0 20px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .exp-item:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+
+  .exp-meta .company {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--black);
+  }
+
+  .exp-meta .role {
+    font-size: 11px;
+    color: var(--gray-mid);
+    margin-top: 2px;
+  }
+
+  .exp-meta .period {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 10px;
+    color: var(--gray-mid);
+    margin-top: 6px;
+  }
+
+  .exp-content .exp-title {
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .exp-content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .exp-content ul li {
+    font-size: 12px;
+    color: var(--gray-dark);
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 3px;
+    line-height: 1.55;
+  }
+
+  .exp-content ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--border);
+    font-size: 11px;
+  }
+
+  .exp-content .highlight-box {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: var(--orange-light);
+    border-left: 3px solid var(--orange);
+    border-radius: 0 4px 4px 0;
+    font-size: 11px;
+    color: var(--gray-dark);
+    line-height: 1.55;
+  }
+
+  .exp-content .highlight-box strong {
+    color: var(--orange);
+    font-weight: 700;
+  }
+
+  /* Projects */
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .project-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+
+  .project-card .pc-tag {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+
+  .project-card .pc-title {
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: var(--black);
+  }
+
+  .project-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .project-card ul li {
+    font-size: 11px;
+    color: var(--gray-dark);
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 2px;
+    line-height: 1.5;
+  }
+
+  .project-card ul li::before {
+    content: '·';
+    position: absolute;
+    left: 2px;
+    color: var(--orange);
+    font-weight: 700;
+  }
+
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .skill-group .sg-label {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-mid);
+    margin-bottom: 5px;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .skill-tag {
+    font-size: 10px;
+    background: var(--gray-light);
+    color: var(--gray-dark);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .skill-tag.highlight {
+    background: var(--orange-light);
+    color: var(--orange);
+  }
+
+  /* Education row */
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .edu-item .ei-school {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--black);
+  }
+
+  .edu-item .ei-dept {
+    font-size: 11px;
+    color: var(--gray-mid);
+    margin-top: 2px;
+  }
+
+  .edu-item .ei-period {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 10px;
+    color: var(--gray-mid);
+    margin-top: 2px;
+  }
+
+  /* Bottom strip */
+  .bottom-strip {
+    margin-top: 28px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cert-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .cert-item {
+    font-size: 10px;
+    color: var(--gray-mid);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .cert-item .cert-name {
+    font-weight: 500;
+    color: var(--gray-dark);
+  }
+
+  .footer-note {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 10px;
+    color: var(--gray-mid);
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <div class="name-block">
+        <div class="name-ko">유다은</div>
+        <div class="name-en">Yu Daeun</div>
+      </div>
+      <div class="tagline">
+        운영 이슈를 구조로 만드는 사람 —<br>
+        <strong>사용자 접점 현장 경험 × 시스템 이해 × VoC 기반 개선 설계</strong>
+      </div>
+    </div>
+    <div class="contact-block">
+      daniyou03@naver.com<br>
+      010-8957-6072<br>
+      경기 고양시 일산서구<br>
+      <a href="https://y0udaeun.github.io/index.html">y0udaeun.github.io</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">핵심 역량</div>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="sc-label">01 · User Foundation</div>
+        <div class="sc-title">사용자 접점 경험</div>
+        <div class="sc-desc">병원 원무과 현장에서 접수·수납·민원 응대를 직접 수행하며 운영 관점의 Pain Point 감각을 체득</div>
+      </div>
+      <div class="summary-card">
+        <div class="sc-label">02 · System Insight</div>
+        <div class="sc-title">운영-시스템 연결 능력</div>
+        <div class="sc-desc">EMR 개발 경험으로 이슈 발생 시 원인을 기술 단에서 추적하고 개발팀과 실무 언어로 소통 가능</div>
+      </div>
+      <div class="summary-card">
+        <div class="sc-label">03 · Ops to Structure</div>
+        <div class="sc-title">VoC → 정책 구조화</div>
+        <div class="sc-desc">운영 중 수집된 VoC와 이슈를 유형별로 분류하고 재발 방지 기준·개선 방향으로 연결하는 실무 수행 중</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">경력</div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="company">㈜ 닷츠랩</div>
+        <div class="role">기획팀 사원<br>웹기획 / 서비스운영</div>
+        <div class="period">2025.04 — 현재<br>재직중 · 서울</div>
+      </div>
+      <div class="exp-content">
+        <ul>
+          <li>서비스·관리자 페이지 기획, 화면 구조 및 플로우 설계 (PPT, Figma)</li>
+          <li>요구사항 정의, 개발·디자인 협업 산출물 관리 및 QA</li>
+          <li>운영 중 수집된 VoC를 유형별로 분류, 반복 이슈에 대한 개선 요청 및 정책 방향 도출</li>
+          <li>운영 이슈 발생 시 원인 파악 → 관련팀 즉시 공유 → 재발 방지 기준 수립</li>
+          <li>실서비스 직접 접속·테스트를 통해 오류·UX 불편·운영 리스크 사전 발굴, 개선 제안서 작성</li>
+        </ul>
+        <div class="highlight-box">
+          <strong>장애 대응</strong> — 대학 입학처 전 페이지 에러 발생 시 오류 범위를 즉시 파악해 개발팀·PM에 병렬 공유, 서비스 중단 최소화. 이후 이슈 유형별 대응 프로세스 문서화 및 운영 기준 수립.
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="company">거민시스템</div>
+        <div class="role">의료정보팀<br>EMR 유지보수 개발</div>
+        <div class="period">2024.09 — 2025.03<br>7개월 · 서울</div>
+      </div>
+      <div class="exp-content">
+        <ul>
+          <li>대학병원 EMR 시스템 유지보수 및 오류 수정 지원</li>
+          <li>의료 데이터(환자 정보, 진료 기록) SQL 조회 및 수정 작업</li>
+          <li>병원 관계자와의 커뮤니케이션을 통한 시스템 개선 요청사항 정리</li>
+          <li>Jira / Confluence 활용 이슈 관리 및 문서화</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="company">척사랑병원</div>
+        <div class="role">원무과 사원<br>원무행정</div>
+        <div class="period">2022.04 — 2023.06<br>1년 3개월 · 경기</div>
+      </div>
+      <div class="exp-content">
+        <ul>
+          <li>접수·수납·계산·환불 처리 (EMR), 의료비 청구 및 정산</li>
+          <li>환자 응대 및 민원 처리, 보험 청구 서류 작성 및 제출</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">주요 프로젝트</div>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="pc-tag">운영 개선 · 리스크 관리</div>
+        <div class="pc-title">입학처 서비스 품질 진단 및 개선 제안</div>
+        <ul>
+          <li>실서비스 직접 테스트로 개인정보 마스킹 누락·유효성 검사 부재 등 리스크 발굴</li>
+          <li>관리자 기능 부재 항목 파악, 운영 자립도 향상 위한 신규 개발 제안</li>
+          <li>타 대학 레퍼런스 조사 기반 개선 우선순위 구조화 및 제안서 작성</li>
+          <li>AI 챗봇 도입 방안 포함 운영 효율화 제안</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="pc-tag">운영 구조화 · 장애 대응</div>
+        <div class="pc-title">대학 입학처 신청 시스템 운영 개선</div>
+        <ul>
+          <li>신청 집중 시즌 사용자 흐름 직접 테스트, 이탈 요인 파악 및 개선 요청</li>
+          <li>반복 발생 운영 이슈 유형별 분류 및 대응 흐름 문서화, 운영 기준 수립</li>
+          <li>전체 페이지 장애 발생 시 영향 범위 즉시 정리 → 개발팀·PM 병렬 공유</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="pc-tag">데이터 이전 · QA</div>
+        <div class="pc-title">공공기관 웹사이트 IA 개편</div>
+        <ul>
+          <li>사용자 탐색 동선 기반 IA 구조 재설계, 콘텐츠 분류 기준 수립</li>
+          <li>데이터 이전 전 콘텐츠·이미지·파일 사전 검수 (유실 0건 달성)</li>
+          <li>마이그레이션 후 데이터 정합성 QA 수행, 오류 항목 정리 및 수정 요청</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="pc-tag">운영 기준 수립 · 품질 관리</div>
+        <div class="pc-title">가구 이커머스 리뉴얼 데이터 이관</div>
+        <ul>
+          <li>PDP 콘텐츠 일관성 기준 수립 및 대규모 상품 데이터 이관</li>
+          <li>매장별 전시 상품 설정 및 리뉴얼 페이지 전반 QA</li>
+          <li>운영 리소스 절감을 위한 관리자 설정 구조 개선 의견 도출</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">기술 스택</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="sg-label">운영·분석</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">VoC 분석</span>
+          <span class="skill-tag highlight">GA4</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Excel</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-label">기획·설계</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">PowerPoint</span>
+          <span class="skill-tag">Jira</span>
+          <span class="skill-tag">Confluence</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-label">개발 이해</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Oracle DB</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-label">협업·도구</div>
+        <div class="skill-tags">
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Claude Pro</span>
+          <span class="skill-tag">ChatGPT</span>
+          <span class="skill-tag">Adobe PS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">학력 · 교육</div>
+    <div class="edu-grid">
+      <div class="edu-item">
+        <div class="ei-school">한국방송통신대학교</div>
+        <div class="ei-dept">컴퓨터과학과 편입 재학중</div>
+        <div class="ei-period">2026.03 —</div>
+      </div>
+      <div class="edu-item">
+        <div class="ei-school">패스트캠퍼스</div>
+        <div class="ei-dept">서비스 기획 PM 완주반</div>
+        <div class="ei-period">2025.03 — 2025.05</div>
+      </div>
+      <div class="edu-item">
+        <div class="ei-school">서영대학교</div>
+        <div class="ei-dept">보건의료행정과 졸업 (3.77/4.5)</div>
+        <div class="ei-period">2020 — 2022</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="bottom-strip">
+    <div class="cert-list">
+      <div class="cert-item"><span class="cert-name">GA4</span> Google · 2025.03</div>
+      <div class="cert-item"><span class="cert-name">GTQ 포토샵 1급</span> KPC · 2025.04</div>
+      <div class="cert-item"><span class="cert-name">정보처리산업기사</span> 필기합격 · 2024.08</div>
+      <div class="cert-item"><span class="cert-name">의료기관행정사</span> 2021.07</div>
+    </div>
+    <div class="footer-note">총 경력 2년 10개월</div>
+  </div>
+
+</div>
+
+
+</body></html>
