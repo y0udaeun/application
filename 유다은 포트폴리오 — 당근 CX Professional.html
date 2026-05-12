@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///Users/daeunyumacbook/Downloads/portfolio_yudaeun_danggeun.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유다은 포트폴리오 — 당근 CX Professional</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --or: #FF7E1B;
+  --or-dim: #FF9A48;
+  --or-bg: #FFF3EA;
+  --or-bg2: #FFE8D2;
+  --black: #1A1A1A;
+  --ink: #2C2C2A;
+  --gray: #666;
+  --gray-lt: #999;
+  --surface: #F5F4F1;
+  --border: #E4E2DC;
+  --white: #FFFFFF;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(245,244,241,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 48px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-logo span {
+  width: 8px; height: 8px;
+  background: var(--or);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 12px;
+  font-family: 'Pretendard', sans-serif;
+  color: var(--gray);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--or); }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 52px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.hero-eyebrow {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--or);
+}
+
+.hero-name {
+  font-size: clamp(56px, 8vw, 88px);
+  font-weight: 900;
+  letter-spacing: -3px;
+  line-height: 0.95;
+  color: var(--black);
+}
+
+.hero-name .highlight { color: var(--or); }
+
+.hero-tagline {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray);
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.hero-tagline strong { color: var(--ink); font-weight: 700; }
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.stat-item .stat-num {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--black);
+  line-height: 1;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.stat-item .stat-label {
+  font-size: 12px;
+  color: var(--gray-lt);
+  margin-top: 4px;
+}
+
+.hero-path {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.path-node {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray);
+  padding: 6px 14px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.path-node.active {
+  background: var(--or);
+  border-color: var(--or);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.path-arrow {
+  font-size: 14px;
+  color: var(--border);
+  margin: 0 6px;
+}
+
+/* SECTION COMMON */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 80px;
+}
+
+.sec-label {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 8px;
+}
+
+.sec-title {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+/* DIVIDER */
+.divider {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 80px;
+  height: 1px;
+  background: var(--border);
+}
+
+/* STRENGTH */
+#strength { background: var(--white); }
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.strength-card {
+  background: var(--white);
+  padding: 28px 24px;
+  border-right: 1px solid var(--border);
+}
+
+.strength-card:last-child { border-right: none; }
+
+.sc-num {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--or-bg2);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.sc-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.sc-desc {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+/* PROJECTS */
+#projects { background: var(--surface); }
+
+.proj-featured {
+  background: var(--black);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.proj-featured::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  background: var(--or);
+  border-radius: 50%;
+  opacity: 0.08;
+}
+
+.pf-badge {
+  display: inline-block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--or);
+  background: rgba(255,126,27,0.12);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.pf-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.pf-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 24px;
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+.pf-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pf-item {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.pf-item-tag {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--or-dim);
+  margin-bottom: 4px;
+}
+
+.pf-item-text {
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.proj-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-card-tag {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 8px;
+}
+
+.proj-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.proj-card-list {
+  list-style: none;
+  flex: 1;
+}
+
+.proj-card-list li {
+  font-size: 12px;
+  color: var(--gray);
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.proj-card-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--or);
+  font-size: 10px;
+  top: 2px;
+}
+
+.proj-card-result {
+  margin-top: 16px;
+  padding: 10px 12px;
+  background: var(--or-bg);
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--or);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* EXPERIENCE */
+#experience { background: var(--white); }
+
+.exp-timeline {
+  position: relative;
+}
+
+.exp-timeline::before {
+  content: '';
+  position: absolute;
+  left: 148px;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  gap: 0 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.tl-item::after {
+  content: '';
+  position: absolute;
+  left: 144px;
+  top: 6px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--border);
+}
+
+.tl-item.current::after {
+  background: var(--or);
+  border-color: var(--or);
+  box-shadow: 0 0 0 4px var(--or-bg);
+}
+
+.tl-meta .tl-period {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 11px;
+  color: var(--gray-lt);
+  line-height: 1.4;
+  text-align: right;
+  padding-right: 24px;
+}
+
+.tl-meta .tl-company {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--black);
+  text-align: right;
+  padding-right: 24px;
+  margin-top: 6px;
+}
+
+.tl-meta .tl-role {
+  font-size: 11px;
+  color: var(--gray-lt);
+  text-align: right;
+  padding-right: 24px;
+}
+
+.tl-content .tl-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+.tl-content ul {
+  list-style: none;
+}
+
+.tl-content ul li {
+  font-size: 13px;
+  color: var(--gray);
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 5px;
+  line-height: 1.55;
+}
+
+.tl-content ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--border);
+}
+
+.tl-highlight {
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: var(--or-bg);
+  border-left: 3px solid var(--or);
+  border-radius: 0 8px 8px 0;
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.tl-highlight strong { color: var(--or); font-weight: 700; }
+
+/* SKILLS */
+#skills { background: var(--surface); }
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.skill-category-title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-lt);
+  margin-bottom: 16px;
+}
+
+.skill-bars { }
+
+.skill-bar-item {
+  margin-bottom: 14px;
+}
+
+.sbi-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.sbi-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.sbi-level {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 11px;
+  color: var(--gray-lt);
+}
+
+.sbi-track {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.sbi-fill {
+  height: 100%;
+  background: var(--or);
+  border-radius: 2px;
+  transition: width 0.8s ease;
+}
+
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-tag {
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.tool-tag.strong {
+  background: var(--or-bg);
+  border-color: var(--or-bg2);
+  color: var(--or);
+  font-weight: 700;
+}
+
+/* EDUCATION */
+#education { background: var(--white); }
+
+.edu-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.edu-card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.edu-card-period {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 10px;
+  color: var(--gray-lt);
+  margin-bottom: 8px;
+}
+
+.edu-card-school {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.edu-card-dept {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.cert-strip {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cert-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--surface);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.cert-pill-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.cert-pill-org {
+  font-size: 11px;
+  color: var(--gray-lt);
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* FOOTER */
+footer {
+  background: var(--black);
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left .fl-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.footer-left .fl-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  font-family: 'Pretendard', sans-serif;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: right;
+}
+
+.fc-item {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  font-family: 'Pretendard', sans-serif;
+}
+
+.fc-item a { color: var(--or-dim); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <span></span>
+    유다은 · Portfolio
+  </div>
+  <ul class="nav-links">
+    <li><a href="file:///Users/daeunyumacbook/Downloads/portfolio_yudaeun_danggeun.html#strength">역량</a></li>
+    <li><a href="file:///Users/daeunyumacbook/Downloads/portfolio_yudaeun_danggeun.html#projects">프로젝트</a></li>
+    <li><a href="file:///Users/daeunyumacbook/Downloads/portfolio_yudaeun_danggeun.html#experience">경력</a></li>
+    <li><a href="file:///Users/daeunyumacbook/Downloads/portfolio_yudaeun_danggeun.html#skills">스킬</a></li>
+    <li><a href="file:///Users/daeunyumacbook/Downloads/portfolio_yudaeun_danggeun.html#education">학력</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">CX Professional · 사업운영팀 지원</div>
+  <div class="hero-name">
+    운영 이슈를<br>
+    <span class="highlight">구조</span>로 만드는<br>
+    사람
+  </div>
+  <div class="hero-tagline">
+    사용자 접점 현장 경험 × 시스템 이해 × VoC 기반 정책 설계<br>
+    <strong>유다은 Yu Daeun</strong>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num">2y10m</div>
+      <div class="stat-label">총 경력</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">5</div>
+      <div class="stat-label">주요 프로젝트</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">3</div>
+      <div class="stat-label">도메인 (의료·공공·이커머스)</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">0건</div>
+      <div class="stat-label">데이터 이전 유실</div>
+    </div>
+  </div>
+
+  <div class="hero-path">
+    <span class="path-node">보건행정</span>
+    <span class="path-arrow">→</span>
+    <span class="path-node">병원원무</span>
+    <span class="path-arrow">→</span>
+    <span class="path-node">SI개발</span>
+    <span class="path-arrow">→</span>
+    <span class="path-node active">웹기획·운영</span>
+  </div>
+</div>
+
+<!-- STRENGTH -->
+<section id="strength">
+  <div class="sec-label">핵심 역량</div>
+  <div class="sec-title">왜 이 일을 잘하냐면</div>
+  <div class="strength-grid">
+    <div class="strength-card">
+      <div class="sc-num">01</div>
+      <div class="sc-title">사용자 접점에서 쌓은 감각</div>
+      <div class="sc-desc">병원 원무과 현장에서 접수·수납·민원 응대를 직접 수행했어요. 운영 관점에서 사용자 Pain Point가 어떻게 발생하고 어떻게 누적되는지를 몸으로 알고 있어요.</div>
+    </div>
+    <div class="strength-card">
+      <div class="sc-num">02</div>
+      <div class="sc-title">기술 단까지 추적하는 문제 해결</div>
+      <div class="sc-desc">EMR 개발 경험 덕분에 이슈 발생 시 원인을 기술 단에서 추적하고, 개발팀과 실무 언어로 소통할 수 있어요. 단순 전달자가 아니라 원인 파악 → 솔루션 도출까지 직접 합니다.</div>
+    </div>
+    <div class="strength-card">
+      <div class="sc-num">03</div>
+      <div class="sc-title">VoC를 정책으로 연결하는 구조화</div>
+      <div class="sc-desc">운영 중 발생하는 이슈를 그때그때 처리하는 데 그치지 않고, 유형별로 분류하고 재발 방지 기준과 개선 방향으로 연결하는 방식으로 일해요.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label">프로젝트</div>
+  <div class="sec-title">실제로 한 일들</div>
+
+  <!-- Featured -->
+  <div class="proj-featured">
+    <div class="pf-badge">운영 품질 진단 · 리스크 관리 · 개선 제안</div>
+    <div class="pf-title">입학처 서비스 품질 진단 및 개선 제안서</div>
+    <div class="pf-desc">실서비스를 직접 접속·테스트하며 오류, UX 불편, 운영 리스크를 항목별로 발굴해 개선 제안서 형태로 클라이언트에 전달. 단순 유지보수 요청이 아니라 운영 관점에서 구조화한 사전 리스크 관리 방식으로 수행.</div>
+    <div class="pf-items">
+      <div class="pf-item">
+        <div class="pf-item-tag">보안 리스크</div>
+        <div class="pf-item-text">Q&amp;A 게시판 작성자명 개인정보 마스킹 누락 발견 → 즉시 수정 제안</div>
+      </div>
+      <div class="pf-item">
+        <div class="pf-item-tag">운영 오류</div>
+        <div class="pf-item-text">파일 미등록 시 오류 없이 빈 요청 발생하는 버그 발견, 알럿 생성 제안</div>
+      </div>
+      <div class="pf-item">
+        <div class="pf-item-tag">운영 자립도</div>
+        <div class="pf-item-text">관리자 기능 부재 항목 파악 → 담당자가 직접 관리 가능한 구조 신규 개발 제안</div>
+      </div>
+      <div class="pf-item">
+        <div class="pf-item-tag">효율화 제안</div>
+        <div class="pf-item-text">타 대학 레퍼런스 조사 기반 AI 챗봇 도입 방안 포함 운영 효율화 로드맵 제안</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="proj-grid">
+    <div class="proj-card">
+      <div class="proj-card-tag">운영 구조화 · 장애 대응</div>
+      <div class="proj-card-title">대학 입학처 신청 시스템 운영 개선</div>
+      <ul class="proj-card-list">
+        <li>신청 집중 시즌 사용자 흐름 직접 테스트, 이탈 요인 파악 및 개선 요청</li>
+        <li>반복 운영 이슈 유형별 분류 및 대응 흐름 문서화</li>
+        <li>전체 페이지 장애 발생 시 범위 즉시 파악 → 개발팀·PM 병렬 공유</li>
+        <li>장애 유형별 대응 프로세스 수립 및 운영 기준 문서화</li>
+      </ul>
+      <div class="proj-card-result">운영 이슈 반복 감소 · 장애 대응 기준 수립</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-card-tag">데이터 이전 · QA · 리스크</div>
+      <div class="proj-card-title">공공기관 웹사이트 IA 개편</div>
+      <ul class="proj-card-list">
+        <li>사용자 탐색 동선 기반 IA 구조 재설계, 콘텐츠 분류 기준 수립</li>
+        <li>데이터 이전 전 콘텐츠·이미지·파일 사전 검수</li>
+        <li>마이그레이션 후 데이터 정합성 QA, 오류 항목 정리·수정 요청</li>
+      </ul>
+      <div class="proj-card-result">데이터 유실 0건 · 안정적 서비스 오픈</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-card-tag">운영 기준 수립 · 품질 관리</div>
+      <div class="proj-card-title">가구 이커머스 리뉴얼 데이터 이관</div>
+      <ul class="proj-card-list">
+        <li>PDP 콘텐츠 일관성 기준 수립, 대규모 상품 데이터 이관</li>
+        <li>매장별 전시 상품 설정 및 리뉴얼 페이지 전반 QA</li>
+        <li>운영 리소스 절감 위한 관리자 설정 구조 개선 의견 도출</li>
+      </ul>
+      <div class="proj-card-result">콘텐츠 일관성 확보 · 안정적 리뉴얼 오픈</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-label">경력</div>
+  <div class="sec-title">걸어온 길</div>
+
+  <div class="exp-timeline">
+    <div class="tl-item current">
+      <div class="tl-meta">
+        <div class="tl-period">2025.04 — 현재<br>재직중 · 서울</div>
+        <div class="tl-company">㈜ 닷츠랩</div>
+        <div class="tl-role">기획팀 사원</div>
+      </div>
+      <div class="tl-content">
+        <div class="tl-title">웹기획 / 서비스운영</div>
+        <ul>
+          <li>서비스·관리자 페이지 기획, 화면 구조 및 플로우 설계 (PPT, Figma)</li>
+          <li>요구사항 정의, 개발·디자인 협업 산출물 관리 및 QA</li>
+          <li>운영 중 수집된 VoC를 유형별로 분류, 반복 이슈 개선 요청 및 정책 방향 도출</li>
+          <li>운영 이슈 발생 시 원인 파악 → 관련팀 즉시 공유 → 재발 방지 기준 수립</li>
+          <li>실서비스 직접 접속·테스트, 오류·UX 불편·운영 리스크 사전 발굴 및 개선 제안서 작성</li>
+        </ul>
+        <div class="tl-highlight">
+          <strong>장애 대응 경험</strong> — 대학 입학처 전 페이지 에러 발생 시 오류 범위를 즉시 파악해 개발팀·PM에 병렬 공유, 서비스 중단 시간 최소화. 이후 이슈 유형별 대응 프로세스 문서화 및 운영 기준 수립.
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-meta">
+        <div class="tl-period">2024.09 — 2025.03<br>7개월 · 서울</div>
+        <div class="tl-company">거민시스템</div>
+        <div class="tl-role">의료정보팀</div>
+      </div>
+      <div class="tl-content">
+        <div class="tl-title">EMR 유지보수 개발</div>
+        <ul>
+          <li>대학병원 EMR 시스템 유지보수 및 오류 수정 지원</li>
+          <li>의료 데이터(환자 정보, 진료 기록) SQL 조회 및 수정 작업</li>
+          <li>병원 관계자와의 커뮤니케이션을 통한 시스템 개선 요청사항 정리</li>
+          <li>Jira / Confluence 활용 이슈 관리 및 문서화</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-meta">
+        <div class="tl-period">2022.04 — 2023.06<br>1년 3개월 · 경기</div>
+        <div class="tl-company">척사랑병원</div>
+        <div class="tl-role">원무과 사원</div>
+      </div>
+      <div class="tl-content">
+        <div class="tl-title">원무행정 · 사용자 접점</div>
+        <ul>
+          <li>접수·수납·계산·환불 처리 (EMR), 의료비 청구 및 정산</li>
+          <li>환자 응대 및 민원 처리 — 운영 관점의 사용자 Pain Point 직접 체험</li>
+          <li>보험 청구 서류 작성 및 제출</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-label">스킬</div>
+  <div class="sec-title">도구들</div>
+
+  <div class="skills-layout">
+    <div>
+      <div class="skill-category-title">운영 · 분석 역량</div>
+      <div class="skill-bars">
+        <div class="skill-bar-item">
+          <div class="sbi-header">
+            <span class="sbi-name">VoC 분류 및 운영 정책 설계</span>
+            <span class="sbi-level">실무 수행</span>
+          </div>
+          <div class="sbi-track"><div class="sbi-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="sbi-header">
+            <span class="sbi-name">서비스 품질 QA · 리스크 발굴</span>
+            <span class="sbi-level">실무 수행</span>
+          </div>
+          <div class="sbi-track"><div class="sbi-fill" style="width:88%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="sbi-header">
+            <span class="sbi-name">SQL 데이터 조회 및 검증</span>
+            <span class="sbi-level">업무 활용</span>
+          </div>
+          <div class="sbi-track"><div class="sbi-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="sbi-header">
+            <span class="sbi-name">GA4 데이터 분석</span>
+            <span class="sbi-level">자격증 보유</span>
+          </div>
+          <div class="sbi-track"><div class="sbi-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="sbi-header">
+            <span class="sbi-name">운영 이슈 문서화 · 기준 수립</span>
+            <span class="sbi-level">실무 수행</span>
+          </div>
+          <div class="sbi-track"><div class="sbi-fill" style="width:82%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="skill-category-title">툴 &amp; 기술</div>
+      <div style="margin-bottom: 20px;">
+        <div style="font-size:11px; color: var(--gray-lt); font-family:&#39;Pretendard&#39;,sans-serif; margin-bottom:10px; letter-spacing:0.05em;">기획·협업</div>
+        <div class="tool-tags">
+          <span class="tool-tag strong">Figma</span>
+          <span class="tool-tag strong">Jira</span>
+          <span class="tool-tag strong">Confluence</span>
+          <span class="tool-tag">PowerPoint</span>
+          <span class="tool-tag">Excel</span>
+          <span class="tool-tag">GitHub</span>
+        </div>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <div style="font-size:11px; color: var(--gray-lt); font-family:&#39;Pretendard&#39;,sans-serif; margin-bottom:10px; letter-spacing:0.05em;">개발 이해 (소통 가능)</div>
+        <div class="tool-tags">
+          <span class="tool-tag">HTML/CSS</span>
+          <span class="tool-tag">JavaScript</span>
+          <span class="tool-tag">Java</span>
+          <span class="tool-tag">Oracle DB</span>
+          <span class="tool-tag">Spring Boot</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11px; color: var(--gray-lt); font-family:&#39;Pretendard&#39;,sans-serif; margin-bottom:10px; letter-spacing:0.05em;">AI · 기타</div>
+        <div class="tool-tags">
+          <span class="tool-tag strong">Claude Pro</span>
+          <span class="tool-tag">ChatGPT</span>
+          <span class="tool-tag">Adobe PS</span>
+          <span class="tool-tag">GA4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="sec-label">학력 · 교육 · 자격</div>
+  <div class="sec-title">쌓아온 것들</div>
+
+  <div class="edu-row">
+    <div class="edu-card">
+      <div class="edu-card-period">2026.03 —</div>
+      <div class="edu-card-school">한국방송통신대학교</div>
+      <div class="edu-card-dept">컴퓨터과학과 편입 재학중</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-card-period">2025.03 — 2025.05</div>
+      <div class="edu-card-school">패스트캠퍼스</div>
+      <div class="edu-card-dept">서비스 기획 PM 완주반 수료<br>K-디지털기초역량훈련</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-card-period">2020 — 2022</div>
+      <div class="edu-card-school">서영대학교</div>
+      <div class="edu-card-dept">보건의료행정과 졸업<br>학점 3.77 / 4.5</div>
+    </div>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-pill">
+      <span class="cert-pill-name">GA4</span>
+      <span class="cert-pill-org">Google · 2025.03</span>
+    </div>
+    <div class="cert-pill">
+      <span class="cert-pill-name">GTQ 포토샵 1급</span>
+      <span class="cert-pill-org">KPC · 2025.04</span>
+    </div>
+    <div class="cert-pill">
+      <span class="cert-pill-name">정보처리산업기사</span>
+      <span class="cert-pill-org">필기합격 · 2024.08</span>
+    </div>
+    <div class="cert-pill">
+      <span class="cert-pill-name">의료기관행정사</span>
+      <span class="cert-pill-org">2021.07</span>
+    </div>
+    <div class="cert-pill">
+      <span class="cert-pill-name">보험심사평가사 2급</span>
+      <span class="cert-pill-org">2020.11</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <div class="fl-title">함께 운영을<br>구조로 만들고 싶어요</div>
+    <div class="fl-sub">당근 CX Professional · 사업운영팀</div>
+  </div>
+  <div class="footer-contacts">
+    <div class="fc-item"><a href="mailto:daniyou03@naver.com">daniyou03@naver.com</a></div>
+    <div class="fc-item">010-8957-6072</div>
+    <div class="fc-item"><a href="https://y0udaeun.github.io/index.html">y0udaeun.github.io</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>
